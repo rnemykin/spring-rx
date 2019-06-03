@@ -1,16 +1,13 @@
 package com.example.reactor.notifier.notice;
 
 import lombok.Data;
-import org.springframework.data.annotation.CreatedDate;
+import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
-import org.springframework.data.annotation.LastModifiedDate;
-import org.springframework.data.relational.core.mapping.Table;
 
 import javax.validation.constraints.NotNull;
-import java.time.LocalDateTime;
 
 @Data
-//@Table("notice2")
+@NoArgsConstructor
 public class Notice {
     public enum Type {
         CONSOLE
